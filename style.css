@@ -1,18 +1,23 @@
 
 body {
-/* Ruta de tu screenshot */
     background-image: url('img/back.jpg'); 
     
-    background-size: contain;
-   
-    background-position: center top;
+    /* Esto hace que la imagen cubra toda la pantalla sin deformarse */
+    background-size: cover;
     
+    /* Esto evita que la imagen se mueva al hacer scroll */
+    background-attachment: fixed;
+    
+    /* Centra la imagen */
+    background-position: center;
+    
+    /* Evita que la imagen se repita si es chica */
     background-repeat: no-repeat;
-   
-    background-color: #000000; 
     
-    margin: 0;
-    padding: 0;
+    /* Un color de respaldo por si la imagen tarda en cargar */
+    background-color: #f8f9fa; 
+    
+    font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
 }
 
