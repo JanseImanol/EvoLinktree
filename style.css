@@ -44,3 +44,17 @@ body {
     color: white;
 }
 
+.x-small {
+    font-size: 0.75rem; /* Más chico que el small estándar */
+    font-weight: 400;   /* Texto más fino */
+}
+
+/* Ajuste para que la foto circular siga siendo perfecta si no es cuadrada */
+.rounded-circle {
+    aspect-ratio: 1 / 1;
+}
+
+/* Aseguramos que los botones outline tengan buena legibilidad */
+.btn-outline-light:hover {
+    color: #333 !important; /* Texto oscuro cuando pasás el mouse */
+}
