@@ -1,38 +1,50 @@
 
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body {
-    background-image: url('img/back.jpg'); 
-    
-    /* Esto hace que la imagen cubra toda la pantalla sin deformarse */
+background-image: url('img/back.jpg');
+    /* 'cover' es mejor para "llenar" la pantalla. 
+       Si usas 'contain', te quedarán franjas negras. 
+       Probá con 'cover' para que sea realmente full-screen. */
     background-size: cover;
-    
-    /* Esto evita que la imagen se mueva al hacer scroll */
-    background-attachment: fixed;
-    
-    /* Centra la imagen */
     background-position: center;
-    
-    /* Evita que la imagen se repita si es chica */
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    
-    /* Un color de respaldo por si la imagen tarda en cargar */
-    background-color: #f8f9fa; 
-    
-    font-family: 'Segoe UI', sans-serif;
-    min-height: 100vh;
+    background-color: #000;
+}
+
+.main-wrapper {
+    min-height: 100vh; /* Ocupa el 100% de la pantalla del celular */
+    width: 100%;
 }
 
 .profile-img {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    border: 3px solid white;
+}
+
+.profile-img-footer {
+    width: clamp(100px, 25vw, 130px); /* Se agranda/achica según la pantalla */
+    height: clamp(100px, 25vw, 130px);
+    object-fit: cover;
 }
 
 .btn-custom {
     border-radius: 12px;  Botones más redondeados y modernos */
     transition: all 0.3s ease;
+}
+
+.x-small {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-custom:hover {
