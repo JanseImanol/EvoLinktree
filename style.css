@@ -1,0 +1,41 @@
+
+body {
+/* Ruta de tu screenshot */
+    background-image: url('img/back.jpg'); 
+    
+    background-size: contain;
+   
+    background-position: center top;
+    
+    background-repeat: no-repeat;
+   
+    background-color: #000000; 
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-custom {
+    border-radius: 12px;  Botones más redondeados y modernos */
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: scale(1.02); /* Crece un poquito al tocarlo */
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
